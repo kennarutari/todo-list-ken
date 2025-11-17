@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="heading"></div>
+    <div class="container">
+      <header>
+        <h1>Simple To-Do List App</h1>
+        <p>Organize Your Task Efficiently</p>
+      </header>
+
+      <main>
+        <section class="section-input">
+          <form class="input-form" id="todo-form">
+            <div class="area-input">
+              <input
+                type="text"
+                id="input-task"
+                placeholder="Enter task here"
+              />
+              <input type="date" id="due-date" placeholder="Enter due date" />
+            </div>
+            <br />
+            <button id="add-button" type="submit">Add Task</button>
+          </form>
+        </section>
+
+        <section class="task-section">
+          <div class="task-header">
+            <h3>Tasks List:</h3>
+            <div class="task-control">
+              <select id="choose">
+                <option value="all">All Task</option>
+                <option value="pending">Pending</option>
+                <option value="completed">Completed</option>
+              </select>
+              <button class="clear-all" id="clear-all-button">
+                Clear All Task
+              </button>
+            </div>
+          </div>
+
+          <div class="task-list" id="list-of-task">
+            <ul class="task-nya">
+              <!-- Task Added Here -->
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>Created by Kennar Utari</p>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
